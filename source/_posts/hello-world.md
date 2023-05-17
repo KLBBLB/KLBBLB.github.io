@@ -7,7 +7,7 @@ title: Hello World & 一晚上特种兵式建站笔记
 
 还没配置好github的图床，所以先不放图片了（对我就是懒）
 图床测试：
-![11](1.png)
+![](https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191652203.png)
 
 # 前言
 想来和网页有着不解之缘
