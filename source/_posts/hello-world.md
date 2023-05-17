@@ -65,6 +65,21 @@ title: Hello World & 一晚上特种兵式建站笔记
 ## 5.14
 建站；使用redefine主题配置
 
+## 5.18凌晨
+1. 搞定了git push，把整个源码push到了hexo分支，方便在线管理
+2. 添加了自动部署action
+3. 阿里云图床
+4. 在线出发action好像还是有问题……
+
+踩坑
+1. 关于本地无法git checkout -b newbranch  还没解决
+2. 如果push后显示everything up-date，需要
+```
+git add .
+git commit -m 'anything'
+git push
+
+```
 
 
 ## 5.18凌晨
