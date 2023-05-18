@@ -1,22 +1,63 @@
-name: Build and Deploy
-on: [push]
+# workflow name
+name: Hexo Blog CI
+
+# master branch on push, auto run
+on: 
+  push:
+    branches:
+      - main
+      
 jobs:
-  build-and-deploy:
-    runs-on: ubuntu-latest
+  build: 
+    runs-on: ubuntu-latest 
+        
     steps:
-      - name: Checkout 🛎️
-        uses: actions/checkout@v2 # If you're using actions/checkout@v2 you must set persist-credentials to false in most cases for the deployment to work correctly.
-        with:
-          persist-credentials: false
-      - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
-        run: |
-          yarn
-          npm run build
-        env:
-          CI: false
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: main # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.（这里就是把生成的public文件推#送到master分支）
+    # check it to your workflow can access it
+    # from: https://github.com/actions/checkout
+    - name: Checkout Repository master branch
+      uses: actions/checkout@master 
+      
+    # from: https://github.com/actions/setup-node  
+    - name: Setup Node.js 16.x 
+      uses: actions/setup-node@master
+      with:
+        node-version: "16.14.0"
+    
+    - name: Cache node modules
+      uses: actions/cache@v1    # 缓存node_modules，避免每次跑action都要重新下载
+      id: cache
+      with:
+        path: node_modules
+        key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    
+    - name: Setup Hexo Dependencies
+      run: |
+        npm install hexo-cli -g
+        npm install
+    
+    - name: update mathjax    # kramed引擎有点问题，将其部分文件替换掉
+      run: |
+        cp correct/hexo-renderer-kramed/renderer.js node_modules/hexo-renderer-kramed/lib/
+        cp correct/kramed/inline.js node_modules/kramed/lib/rules/
+        cp correct/hexo-renderer-mathjax/mathjax.html node_modules/hexo-renderer-mathjax
+
+    - name: Setup Deploy Private Key
+      env:
+        HEXO_DEPLOY_PRIVATE_KEY: ${{ secrets.HEXO_DEPLOY_PRI }}    # 这个就是Source仓库的私钥
+      run: |
+        mkdir -p ~/.ssh/
+        echo "$HEXO_DEPLOY_PRIVATE_KEY" > ~/.ssh/id_rsa 
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+        
+    - name: Setup Git Infomation
+      run: | 
+        git config --global user.name "TransformersWsz"
+        git config --global user.email "3287124026@qq.com"
+    - name: Deploy Hexo 
+      run: |
+        hexo clean
+        hexo generate 
+        hexo deploy
