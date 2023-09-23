@@ -17,25 +17,6 @@
     
     
     <entry>
-      <title>探索 优雅地输入公式</title>
-      <link href="/2023/06/30/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F/"/>
-      <url>/2023/06/30/%E4%BC%98%E9%9B%85%E5%9C%B0%E8%BE%93%E5%85%A5%E5%85%AC%E5%BC%8F/</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>随着实验报告的增多，手敲公式的场景也几何式增加，而无论是md的公式还是latex的公式都比较繁琐。md的公式总体上还好，但是在敲积分、分段函数的时候就比较蛋疼。那么有没有什么办法可以快速的输入公式呢？</p><p>第一个想到的是肯定是手写输入识别！</p><h1 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h1><h2 id="nebo-for-huawei"><a href="#nebo-for-huawei" class="headerlink" title="nebo for huawei"></a>nebo for huawei</h2><p>这是一个能把手写公式转化为字体公式的app，同时也是一个笔记软件（但是延迟和笔迹真的一言难尽）。试了一下发现公式的识别率很高，而且可以导出为word和pdf。</p><p>然而我们用的是joplin，或者说md，虽然说导出为word然后再把公式按latex解码就能得到源码，但是非常繁琐，而且word的公式老是抽风，使用体验极差。</p><h2 id="snip"><a href="#snip" class="headerlink" title="snip"></a>snip</h2><p>这是一款谷歌商店上的公式图片转文字软件，可以识别图片直接出latex公式，但是只能一次性识别。</p><p>如果nebo集成了这个功能，或者snip集成一下手写识别，这将是绝杀，可惜集成不得……</p><h2 id="投屏"><a href="#投屏" class="headerlink" title="投屏"></a>投屏</h2><p>既然他俩的功能是互补的，那么整合的事情就交给我来折腾吧。</p><ul><li><p>使用投屏软件把平板投屏到电脑，在电脑端安装snip。</p></li><li><p>在平板端手写公式，由nebo变成文字，电脑端直接用snip截图投屏内容，直接出latex源码。</p></li></ul><p>这样的逻辑基本上符合写作时的习惯，需要敲公式的时候只需要低头在平板上写下来，然后鼠标截图放到snip中就能得到源码，肯定比硬敲来的快来的爽。</p><h2 id="挖坑"><a href="#挖坑" class="headerlink" title="挖坑"></a>挖坑</h2><p>md讲究的就是一个“全程不用鼠标”，而引入这个以后就需要动鼠标了，虽然不是什么大事但也显得不够优雅。有没有办法能用键盘完成一切呢？或者说能不能在平板上写完公式直接就能放到md正文中呢?</p><p>浅挖一坑，日后来想想怎么填。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 软件 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hello World</title>
       <link href="/2023/06/30/hello-world/"/>
       <url>/2023/06/30/hello-world/</url>
