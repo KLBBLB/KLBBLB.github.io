@@ -16,23 +16,23 @@
   <meta name="author" content="KLBB">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一晚上特种兵式建站笔记">
+    <meta name="description" content="懒人自有懒人强，一键更比十行爽">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://zjuklbb.top/2023/06/30/hello-world/index.html">
+<meta property="og:title" content="Hexo &amp; Github page 本地快速部署及备份&amp;bat的妙用">
+<meta property="og:url" content="http://zjuklbb.top/2023/06/30/%E6%9C%AC%E5%9C%B0%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/index.html">
 <meta property="og:site_name" content="KLBB&#39;s secret garden">
-<meta property="og:description" content="一晚上特种兵式建站笔记">
+<meta property="og:description" content="懒人自有懒人强，一键更比十行爽">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://zjuklbb.top/images/test.jpg">
-<meta property="article:published_time" content="2023-06-30T03:30:33.384Z">
-<meta property="article:modified_time" content="2023-09-25T11:42:02.062Z">
+<meta property="og:image" content="http://zjuklbb.top/images/%E4%B8%80%E9%94%AE.gif">
+<meta property="article:published_time" content="2023-06-30T03:30:33.407Z">
+<meta property="article:modified_time" content="2023-05-29T06:18:05.000Z">
 <meta property="article:author" content="KLBB">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="http://zjuklbb.top/images/test.jpg">
+<meta name="twitter:image" content="http://zjuklbb.top/images/%E4%B8%80%E9%94%AE.gif">
   
   
   
-  <title>Hello World - KLBB&#39;s secret garden</title>
+  <title>Hexo &amp; Github page 本地快速部署及备份&amp;bat的妙用 - KLBB&#39;s secret garden</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -210,7 +210,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="Hello World"></span>
+            <span id="subtitle" data-typed-text="Hexo &amp; Github page 本地快速部署及备份&amp;bat的妙用"></span>
           
         </div>
 
@@ -233,7 +233,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.1k 字
+          655 字
         
       </span>
     
@@ -244,7 +244,7 @@
         
         
         
-          10 分钟
+          6 分钟
         
       </span>
     
@@ -282,59 +282,22 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">Hello World</h1>
+            <h1 style="display: none">Hexo &amp; Github page 本地快速部署及备份&amp;bat的妙用</h1>
             
             
               <div class="markdown-body">
                 
-                <p>果然赶ddl的时候除了ddl什么都是香的……</p>
-<p>大晚上突然兴起决定搓一个网站来当信纸(&#x2F;doge)</p>
-<p>图片测试<br><img src="/images/test.jpg" srcset="/img/loading.gif" lazyload></p>
-<p>公式测试</p>
-<p>$\frac{t_0}{2\omega}$</p>
-<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>想来和网页有着不解之缘</p>
-<br>
+                <p>在线部署没有搞明白，好在本地部署和同步找到了偷懒的办法</p>
+<h2 id="bat的妙用"><a href="#bat的妙用" class="headerlink" title=".bat的妙用"></a>.bat的妙用</h2><p>早在暑假超算课，就把ssh和scp到集群的命令整合在一起放到一个.cmd中。因此一开始也是想要写到bat里。</p>
+<figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-built_in">cd</span> C:\APP\GIT_page\KLBBLB.github.io<br>hexo g <br><br><br><br><br><br>hexo d<br><span class="hljs-built_in">cd</span> ..<br><span class="hljs-built_in">xcopy</span> KLBBLB.github.io\ source\hexo_source\ /E/Y<br><br><span class="hljs-built_in">cd</span> source/hexo_source<br><br>git add .<br>git commit -m &#x27;<span class="hljs-number">6</span>&#x27;<br>git push<br><br></code></pre></td></tr></table></figure>
+<p>结果发现只执行一行……</p>
+<p>查百度才发现，其实这种dos指令本意上就是一行一行来的，早起程序员才不会让你浪费那么多堆栈呢</p>
+<p>为了终端不关闭且顺序执行，要在命令前加call</p>
+<figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">cd</span> C:\APP\GIT_page\KLBBLB.github.io<br><span class="hljs-keyword">call</span> hexo g <br><br><br><br><br><br><span class="hljs-keyword">call</span> hexo d<br><span class="hljs-built_in">cd</span> ..<br><span class="hljs-keyword">call</span> <span class="hljs-built_in">xcopy</span> KLBBLB.github.io\ source\hexo_source\ /E/Y<br><br><span class="hljs-built_in">cd</span> source/hexo_source<br><br><span class="hljs-keyword">call</span> git add .<br><span class="hljs-keyword">call</span> git commit -m &#x27;<span class="hljs-number">6</span>&#x27;<br>git push<br></code></pre></td></tr></table></figure>
 
-<h2 id="高中"><a href="#高中" class="headerlink" title="高中"></a>高中</h2><p>高二疫情在家的时候无聊，第一次接触建站，第一次懵懵懂懂间了解了网页的构成和原理。其实可以把网页看成一个放在网上的程序，所以广义上，他由<strong>本地的一部分代码</strong> 与 把它<strong>放到网上的手段</strong> 两部分构成。那个时候全程跟着教程走，折腾了整整一周，终于搭建出了人生中第一个网站：“klbb的小窝”。它基于wordpress，部署在免费的云服务器上，域名是1块钱白嫖来的。现在想来，那个网站很可能是我高中的转折点。在填鸭教育中，我好像从头到尾自己做出了一个很酷的东西，这让我满怀信心，有勇气面对高三的艰难险阻；也是在那个时候，工科男的那种热爱折腾的精神扎根在了心底。</p>
-<p>很可惜，在高三繁忙的学业中，云服务器过期并且删档了，而小白如我居然没有留本地备份，所以很悲催的是在一个周末我发现再也登不上那个网站了……</p>
-<br>
-
-<h2 id="大一"><a href="#大一" class="headerlink" title="大一"></a>大一</h2><p>在此接触网站是在大一下工高报名表的时候。要求全程手撸前端后端代码，写一个本地的可登录的备忘录网站。看着这好像熟悉又完全陌生的玩意，我还是毅然选了这题。四天的天昏地暗，早八到晚二，从零学三门html，css，js,一边敲代码一边骂自己高二干嘛要用wordpress那个现成的玩意。好在最后是做出来了一个精致的网站，四道题里只有这个是答得最完整的，我后来想想能进后面的面试这道题肯定帮了很大的忙。</p>
-<br> 
-
-
-
-
-
-
-<h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="5-14"><a href="#5-14" class="headerlink" title="5.14"></a>5.14</h2><ul>
-<li>基于hexo，部署于github page上的静态页面</li>
-<li>用到node.js以及git</li>
-<li>具体流程参考<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_51513895/category_11314070.html">CSDN大佬</a></li>
-</ul>
-<p>使用redefine主题配置</p>
-<h2 id="5-18凌晨"><a href="#5-18凌晨" class="headerlink" title="5.18凌晨"></a>5.18凌晨</h2><ol>
-<li>搞定了git push，把整个源码push到了hexo分支，方便在线管理</li>
-<li>添加了自动部署action</li>
-<li>阿里云图床</li>
-<li>在线出发action好像还是有问题……</li>
-</ol>
-<p>踩坑</p>
-<ol>
-<li>关于本地无法git checkout -b newbranch  还没解决</li>
-<li>如果push后显示everything up-date，需要<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">git <span class="hljs-keyword">add</span> .<br>git <span class="hljs-keyword">commit</span> -m <span class="hljs-string">&#x27;anything&#x27;</span><br>git push<br><br></code></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="5-18白天"><a href="#5-18白天" class="headerlink" title="5.18白天"></a>5.18白天</h2><p>404小坑：在source文件夹下加CNAME，否则每次发布会把原来的CNAME给删掉造成404</p>
-<h2 id="5-20下午"><a href="#5-20下午" class="headerlink" title="5.20下午"></a>5.20下午</h2><p>更换为fluid主题，决定长期使用。</p>
-<ul>
-<li>文章摘要精简</li>
-</ul>
-<p>踩坑：yml配置文件冒号后面要有空格</p>
-<figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">World</span>   <span class="hljs-string">（注意冒号后的空格）</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">一晚上特种兵式建站笔记</span>  <span class="hljs-string">（注意冒号后的空格）</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure>
-
-<h2 id="5-22凌晨"><a href="#5-22凌晨" class="headerlink" title="5.22凌晨"></a>5.22凌晨</h2><p>改了一下图标、背景图之类的小玩意</p>
-<h2 id="5-22下午"><a href="#5-22下午" class="headerlink" title="5.22下午"></a>5.22下午</h2><p>加了分类功能，终于可以把技术贴和碎碎念分开啦</p>
-<h2 id="9-23深夜"><a href="#9-23深夜" class="headerlink" title="9.23深夜"></a>9.23深夜</h2><p>加了友链功能。</p>
+<p>这里讲讲xcopy，就是cmd的复制指令，后边的&#x2F;E是复制子文件主文件空文件（全部），&#x2F;Y是阻止窗口跳覆盖提示使得过程变得不优雅</p>
+<p>整段的意思就是hexo编译和发布，然后把源文件备份到本地仓库再上传到github。</p>
+<h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/images/%E4%B8%80%E9%94%AE.gif" srcset="/img/loading.gif" lazyload></p>
 
                 
               </div>
@@ -373,8 +336,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>Hello World</div>
-      <div>http://zjuklbb.top/2023/06/30/hello-world/</div>
+      <div>Hexo &amp; Github page 本地快速部署及备份&amp;bat的妙用</div>
+      <div>http://zjuklbb.top/2023/06/30/本地快速部署及备份/</div>
     </div>
     <div class="license-meta">
       
@@ -418,15 +381,21 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2023/06/30/joplin&amp;markdown%E5%90%88%E9%9B%86/" title="JOPLIN &amp; MARKDOWN">
+                      <a href="/2023/06/30/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%94/" title="深夜随笔">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">JOPLIN &amp; MARKDOWN</span>
+                        <span class="hidden-mobile">深夜随笔</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
                   </article>
                   <article class="post-next col-6">
                     
+                    
+                      <a href="/2023/06/30/%E6%89%98%E7%AE%A1/" title="zeit托管">
+                        <span class="hidden-mobile">zeit托管</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
                     
                   </article>
                 </div>

@@ -16,23 +16,33 @@
   <meta name="author" content="KLBB">
   <meta name="keywords" content="">
   
-    <meta name="description" content="inspired by LBXX">
-<meta property="og:type" content="website">
-<meta property="og:title" content="KLBB&#39;s secret garden">
-<meta property="og:url" content="http://zjuklbb.top/page/2/index.html">
+    <meta name="description" content="joplin技巧备忘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="JOPLIN &amp; MARKDOWN">
+<meta property="og:url" content="http://zjuklbb.top/2023/06/30/joplin&markdown%E5%90%88%E9%9B%86/index.html">
 <meta property="og:site_name" content="KLBB&#39;s secret garden">
-<meta property="og:description" content="inspired by LBXX">
+<meta property="og:description" content="joplin技巧备忘">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://zjuklbb.top/images/image-1.png">
+<meta property="article:published_time" content="2023-06-30T03:30:33.388Z">
+<meta property="article:modified_time" content="2023-06-28T15:27:53.000Z">
 <meta property="article:author" content="KLBB">
 <meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="http://zjuklbb.top/images/image-1.png">
   
   
   
-  <title>KLBB&#39;s secret garden</title>
+  <title>JOPLIN &amp; MARKDOWN - KLBB&#39;s secret garden</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
 
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
 
 
 
@@ -82,7 +92,7 @@
   <header>
     
 
-<div class="header-inner" style="height: 100vh;">
+<div class="header-inner" style="height: 70vh;">
   <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
   <div class="container">
     <a class="navbar-brand" href="/">
@@ -200,17 +210,53 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="welcome to KLBB&#39;s secret garden"></span>
+            <span id="subtitle" data-typed-text="JOPLIN &amp; MARKDOWN"></span>
           
         </div>
 
         
+          
+  <div class="mt-3">
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2023-06-30 11:30" pubdate>
+          2023年6月30日 中午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          493 字
+        
+      </span>
+    
+
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-clock-fill"></i>
+        
+        
+        
+          5 分钟
+        
+      </span>
+    
+
+    
+    
+  </div>
+
+
+        
       </div>
 
-      
-        <div class="scroll-down-bar">
-          <i class="iconfont icon-arrowdown"></i>
-        </div>
       
     </div>
   </div>
@@ -222,139 +268,180 @@
 
   <main>
     
-      <div class="container nopadding-x-md">
-        <div id="board"
-          style="margin-top: 0">
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-12 col-md-10 m-auto">
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">JOPLIN &amp; MARKDOWN</h1>
+            
+            
+              <div class="markdown-body">
                 
+                <h1 id="multimarkdown-表格扩展"><a href="#multimarkdown-表格扩展" class="headerlink" title="multimarkdown 表格扩展"></a>multimarkdown 表格扩展</h1><p>不扩展前，表格只能是这样的</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 低音提升 |              | 低音衰减 |              | 高音提升 |              | 高音衰减 |              |<br>| -------- | ------------ | -------- | ------------ | -------- | ------------ | -------- | ------------ |<br>| 频率     | 提升量（dB） | 频率     | 衰减量（dB） | 频率     | 提升量（dB） | 频率     | 衰减量（dB） |<br>| 20Hz     | 18.6         | 20Hz     | -20          | 20kHz    | 13.1         | 20kHz    | -21          |<br></code></pre></td></tr></table></figure>
+
+<p><img src="/images/image-1.png" srcset="/img/loading.gif" lazyload alt="Alt text"></p>
+<p>启用后：</p>
+<pre><code class="markdown">
 
 
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/06/30/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/" target="_self">
-          SSH的知识&amp;在线部署踩坑相关
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/06/30/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/" target="_self">
-        <div>
-          未完待续
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-06-30 11:30" pubdate>
-              2023-06-30
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/" class="category-chain-item">建站相关</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
-
-  <div class="row mx-auto index-card">
-    
-    
-    <article class="col-12 col-md-12 mx-auto index-info">
-      <h1 class="index-header">
-        
-        <a href="/2023/06/30/hello-world/" target="_self">
-          Hello World
-        </a>
-      </h1>
-
-      
-      <a class="index-excerpt index-excerpt__noimg" href="/2023/06/30/hello-world/" target="_self">
-        <div>
-          一晚上特种兵式建站笔记
-        </div>
-      </a>
-
-      <div class="index-btm post-metas">
-        
-          <div class="post-meta mr-3">
-            <i class="iconfont icon-date"></i>
-            <time datetime="2023-06-30 11:30" pubdate>
-              2023-06-30
-            </time>
-          </div>
-        
-        
-          <div class="post-meta mr-3 d-flex align-items-center">
-            <i class="iconfont icon-category"></i>
-            
-
-<span class="category-chains">
-  
-  
-    
-      <span class="category-chain">
-        
-  <a href="/categories/%E5%BB%BA%E7%AB%99%E7%9B%B8%E5%85%B3/" class="category-chain-item">建站相关</a>
-  
-  
-
-      </span>
-    
-  
-</span>
-
-          </div>
-        
-        
-      </div>
-    </article>
-  </div>
+| 低音提升             || 低音衰减               || 高音提升 |              | 高音衰减 |              |
+| -------- | ------------ | -------- | ------------ | -------- | ------------ | -------- | ------------ |
+| 频率     | 提升量（dB） | 频率     | 衰减量（dB） | 频率     | 提升量（dB） | 频率     | 衰减量（dB） |
+| 20Hz     | 18.6         | 20Hz     | -20          | 20kHz    | 13.1         | 20kHz    | -21          |
 
 
+![Alt text](images/image2.png)
 
-  <nav aria-label="navigation">
-    <span class="pagination" id="pagination">
-      <a class="extend prev" rel="prev" href="/"><i class="iconfont icon-arrowleft"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span>
-    </span>
-  </nav>
+但好像vscode的渲染不管怎么样都能渲染成第二种。
+</code></pre>
 
-
-
+                
               </div>
-            </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>JOPLIN &amp; MARKDOWN</div>
+      <div>http://zjuklbb.top/2023/06/30/joplin&amp;markdown合集/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>KLBB</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2023年6月30日</div>
+        </div>
+      
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-by"></i>
+                  </span>
+                </a>
+              
+            
           </div>
         </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2023/06/30/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/" title="SSH的知识&amp;在线部署踩坑相关">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">SSH的知识&amp;在线部署踩坑相关</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2023/06/30/hello-world/" title="Hello World">
+                        <span class="hidden-mobile">Hello World</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+          </article>
+        </div>
       </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
     
 
     
@@ -448,6 +535,99 @@
 
 
 
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.18.2/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/4.3.1/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
 
   <script  src="/js/local-search.js" ></script>
 

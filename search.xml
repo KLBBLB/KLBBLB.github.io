@@ -4,54 +4,9 @@
   
     
     <entry>
-      <title>奇奇怪怪的问题之解决</title>
-      <link href="/2023/06/30/%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
-      <url>/2023/06/30/%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
-      
-        <content type="html"><![CDATA[<ol><li><p>B站网页端默认清晰度变成了720p<br> 事发很突然，持续了一个月，今天终于忍不住了，可是清理cookie太麻烦，遂翻贴吧寻找，找到如下玄学解决方案，还真成功了……</p><p> <img src="/images/image.png" alt="Alt text"></p></li><li><p>显卡，设备管理器里能识别，能装驱动，但是不工作，任务管理器里不显示，GPUZ内看不到核心频率<br> 2060是16pin!!我怎么会脑抽地认为只用插8pin的啊！！以上现象均为只插8pin的结果。</p></li><li><p>git clone时报错</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs git">git clone https://github.com/KLBBLB/zeit.git<br></code></pre></td></tr></table></figure><p> 报错：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">fatal: protocol <span class="hljs-string">&#x27;https&#x27;</span> is not supported<br><br></code></pre></td></tr></table></figure><p> 原因及解决：windows下git命令行显示问题，实际上你粘贴前进行过其他退格删除操作，会遗留一些看不到的字符在上面，完整的粘贴一遍或者重新打一遍https就可以</p></li><li><p>win11开机后网络要30s以后才能连接</p><p>感谢贴吧大哥</p></li></ol><p><img src="/images/wlan.png" alt="image-20230816110015457"></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello World</title>
-      <link href="/2023/06/30/hello-world/"/>
-      <url>/2023/06/30/hello-world/</url>
-      
-        <content type="html"><![CDATA[<p>果然赶ddl的时候除了ddl什么都是香的……</p><p>大晚上突然兴起决定搓一个网站来当信纸(&#x2F;doge)</p><p>图片测试<br><img src="/images/test.jpg"></p><p>公式测试(需指定math: true)</p><p>$\frac{1}{2}$</p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>想来和网页有着不解之缘</p><br><h2 id="高中"><a href="#高中" class="headerlink" title="高中"></a>高中</h2><p>高二疫情在家的时候无聊，第一次接触建站，第一次懵懵懂懂间了解了网页的构成和原理。其实可以把网页看成一个放在网上的程序，所以广义上，他由<strong>本地的一部分代码</strong> 与 把它<strong>放到网上的手段</strong> 两部分构成。那个时候全程跟着教程走，折腾了整整一周，终于搭建出了人生中第一个网站：“klbb的小窝”。它基于wordpress，部署在免费的云服务器上，域名是1块钱白嫖来的。现在想来，那个网站很可能是我高中的转折点。在填鸭教育中，我好像从头到尾自己做出了一个很酷的东西，这让我满怀信心，有勇气面对高三的艰难险阻；也是在那个时候，工科男的那种热爱折腾的精神扎根在了心底。</p><p>很可惜，在高三繁忙的学业中，云服务器过期并且删档了，而小白如我居然没有留本地备份，所以很悲催的是在一个周末我发现再也登不上那个网站了……</p><br><h2 id="大一"><a href="#大一" class="headerlink" title="大一"></a>大一</h2><p>在此接触网站是在大一下工高报名表的时候。要求全程手撸前端后端代码，写一个本地的可登录的备忘录网站。看着这好像熟悉又完全陌生的玩意，我还是毅然选了这题。四天的天昏地暗，早八到晚二，从零学三门html，css，js,一边敲代码一边骂自己高二干嘛要用wordpress那个现成的玩意。好在最后是做出来了一个精致的网站，四道题里只有这个是答得最完整的，我后来想想能进后面的面试这道题肯定帮了很大的忙。</p><br> <h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="5-14"><a href="#5-14" class="headerlink" title="5.14"></a>5.14</h2><ul><li>基于hexo，部署于github page上的静态页面</li><li>用到node.js以及git</li><li>具体流程参考<a href="https://blog.csdn.net/qq_51513895/category_11314070.html">CSDN大佬</a></li></ul><p>使用redefine主题配置</p><h2 id="5-18凌晨"><a href="#5-18凌晨" class="headerlink" title="5.18凌晨"></a>5.18凌晨</h2><ol><li>搞定了git push，把整个源码push到了hexo分支，方便在线管理</li><li>添加了自动部署action</li><li>阿里云图床</li><li>在线出发action好像还是有问题……</li></ol><p>踩坑</p><ol><li>关于本地无法git checkout -b newbranch  还没解决</li><li>如果push后显示everything up-date，需要<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">git <span class="hljs-keyword">add</span> .<br>git <span class="hljs-keyword">commit</span> -m <span class="hljs-string">&#x27;anything&#x27;</span><br>git push<br><br></code></pre></td></tr></table></figure></li></ol><h2 id="5-18白天"><a href="#5-18白天" class="headerlink" title="5.18白天"></a>5.18白天</h2><p>404小坑：在source文件夹下加CNAME，否则每次发布会把原来的CNAME给删掉造成404</p><h2 id="5-20下午"><a href="#5-20下午" class="headerlink" title="5.20下午"></a>5.20下午</h2><p>更换为fluid主题，决定长期使用。</p><ul><li>文章摘要精简</li></ul><p>踩坑：yml配置文件冒号后面要有空格</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">World</span>   <span class="hljs-string">（注意冒号后的空格）</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">一晚上特种兵式建站笔记</span>  <span class="hljs-string">（注意冒号后的空格）</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure><h2 id="5-22凌晨"><a href="#5-22凌晨" class="headerlink" title="5.22凌晨"></a>5.22凌晨</h2><p>改了一下图标、背景图之类的小玩意</p><h2 id="5-22下午"><a href="#5-22下午" class="headerlink" title="5.22下午"></a>5.22下午</h2><p>加了分类功能，终于可以把技术贴和碎碎念分开啦</p><h2 id="9-23深夜"><a href="#9-23深夜" class="headerlink" title="9.23深夜"></a>9.23深夜</h2><p>加了友链功能。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 建站相关 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>JOPLIN &amp; MARKDOWN</title>
-      <link href="/2023/06/28/joplin&amp;markdown%E5%90%88%E9%9B%86/"/>
-      <url>/2023/06/28/joplin&amp;markdown%E5%90%88%E9%9B%86/</url>
-      
-        <content type="html"><![CDATA[<h1 id="multimarkdown-表格扩展"><a href="#multimarkdown-表格扩展" class="headerlink" title="multimarkdown 表格扩展"></a>multimarkdown 表格扩展</h1><p>不扩展前，表格只能是这样的</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 低音提升 |              | 低音衰减 |              | 高音提升 |              | 高音衰减 |              |<br>| -------- | ------------ | -------- | ------------ | -------- | ------------ | -------- | ------------ |<br>| 频率     | 提升量（dB） | 频率     | 衰减量（dB） | 频率     | 提升量（dB） | 频率     | 衰减量（dB） |<br>| 20Hz     | 18.6         | 20Hz     | -20          | 20kHz    | 13.1         | 20kHz    | -21          |<br></code></pre></td></tr></table></figure><p><img src="/images/image-1.png" alt="Alt text"></p><p>启用后：</p><pre><code class="markdown">| 低音提升             || 低音衰减               || 高音提升 |              | 高音衰减 |              || -------- | ------------ | -------- | ------------ | -------- | ------------ | -------- | ------------ || 频率     | 提升量（dB） | 频率     | 衰减量（dB） | 频率     | 提升量（dB） | 频率     | 衰减量（dB） || 20Hz     | 18.6         | 20Hz     | -20          | 20kHz    | 13.1         | 20kHz    | -21          |![Alt text](images/image2.png)但好像vscode的渲染不管怎么样都能渲染成第二种。</code></pre>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>深夜随笔</title>
-      <link href="/2023/06/14/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%942/"/>
-      <url>/2023/06/14/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%942/</url>
+      <link href="/2023/06/30/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%942/"/>
+      <url>/2023/06/30/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%942/</url>
       
         <content type="html"><![CDATA[<p>窒息的期末周开始了。<br>早上很极限地在ddl前写完了模电实验的报告，还是改不掉完美主义的毛病，明明很快能完成的东西非要纠结着细节。是在东教麦斯威干的活，这样的日子真是干一天少一天了啊。靠门的那个大皮椅子，虽然有点闷屁股，但靠着真的好舒服，不知道玉泉有没有这样舒服的去处。</p><p>今天刚刚考完了yyy的模电实验。没有想象中的恐怖，两个小时半的时间，按部就班地操作，从容地翻着ppt，能尽人事的部分应该是把分拿满了。这可能就是开卷考的自信吧。最开始听说她是电院内卷风气的始作俑者，心里说不怕是不可能的。但这半学期以来，发现她教的还真不错，排除可能的抖M人格不谈，只要你会问，她就能讲清楚。我们需要的不就是这样的老师嘛！</p><p>晚上在马原老师的唠叨中重回“劳动”“价值”“价格”的海洋，高一被政治绿皮书支配的恐惧死灰复燃。其实很多课如果不考试，应该是很有意思的。马克思想用一套理论去解释这个世界，不就像高中的我用一套自创的理论去应试各个科目、从知识点和出题人的角度去揣摩题目嘛。发现了一个放之“四海”皆准的理论是真的令人欣喜，学习马克思这套普适性的理论也很有趣，只可惜期末考试不同意我细细漫步啊……</p><p>集中精神，是下面两周的关键。一定要为紫金港的旅程画上完美的句号！</p>]]></content>
       
@@ -68,28 +23,9 @@
     
     
     <entry>
-      <title>ONEDRIVE备份方案</title>
-      <link href="/2023/06/09/%E5%A4%87%E4%BB%BD/"/>
-      <url>/2023/06/09/%E5%A4%87%E4%BB%BD/</url>
-      
-        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>看了很多固态硬盘掉盘和失效的视频，突然发现自己的数据居然都没有备份！<br>方案一就是买个机械的移动硬盘，但奈何囊中羞涩，而且移动硬盘买来不移动只备份好像说不过去<br>于是盯上了云备份。</p><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>先看了百度云阿里云，都要充钱，pass<br>于是看到了ONEDRIVE，教育邮箱有5T的空间！缺点是速度比较慢，但对于备份来说速度并不重要。</p><p>因为ONEDRIVE只支持同步三个文件夹：我的图片，文档，桌面，所以要同步其他文件夹的话可以使用mklink命令，把其他文件夹链接到这三个文件夹上。</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">mklink /d &quot;C:\Users\KLBB\OneDrive - zju.edu.cn\我的图片&quot; &quot;C:\DATA&quot;<br></code></pre></td></tr></table></figure><p>前面是onedrive的地址，后面是目标文件夹，保证onedrive里面没有重名文件夹。</p><p><img src="/images/beifen.png" alt="最终效果"></p><h2 id="end"><a href="#end" class="headerlink" title="end"></a>end</h2><p>上传速度不快，但电脑开着机放一晚上基本就同步好了。</p><p>参考自<a href="https://www.zhihu.com/question/265950919">知乎大神</a></p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 各种折腾教程 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>深夜随笔</title>
-      <link href="/2023/06/03/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%94/"/>
-      <url>/2023/06/03/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%94/</url>
+      <link href="/2023/06/30/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%94/"/>
+      <url>/2023/06/30/%E6%B7%B1%E5%A4%9C%E9%9A%8F%E7%AC%94/</url>
       
         <content type="html"><![CDATA[<p>还有十几天就是期末考试了，又是匆匆忙忙的一个学期，就如低头赶路的时候，醒目的路牌突然提醒你目的地就要到了。</p><p>复习的进度很慢、很焦灼，一如梅老板在巴黎的跌跌撞撞，不管怎么说，希望为这学期的辛苦画上完美的句号。</p><p>明天就是三好杯的三四名决赛，群里正在嚷嚷着拉一些电院的观众，以对抗计院百余人的粉丝团。</p><p>刚刚从东操踩场回来。真草的感觉真好，每一脚都踩得很实，每一次变向都能发上力，一下子让我回到鄞中的时光。今晚突然回想起了之前盘带的技巧，前几周绞尽脑汁想不起来的事情灵光乍现，增加了对明晚比赛的信心。</p><p>回来的时候顺手买了罐啤酒，不知道是什么脑回路，喝完晕乎乎的。旁边是打开的马原复习提纲，打算再背一些就睡了。两点钟的紫金港，一年前有幸领教，再过一个月也将说再见了。</p><p>晚安，加油啊，你要变得坚强，做一个情绪稳定的人，做一个自信的人，做一个从容的人。</p>]]></content>
       
@@ -106,79 +42,9 @@
     
     
     <entry>
-      <title>zeit托管</title>
-      <link href="/2023/05/29/%E6%89%98%E7%AE%A1/"/>
-      <url>/2023/05/29/%E6%89%98%E7%AE%A1/</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2015年，github永久拒绝百度爬虫，理由是百度爬虫太狠导致安全问题。</p><p><img src="/images/baidu-git.gif" alt="第一次做这种动图，好有趣，可惜PS做GIF好麻烦……"></p><p>这导致我的博客无法被百度到。</p><p>虽然2023年必应一举超过百度成为了中国最热门的搜索引擎，并且我的博客是可以被必应收录的，但不可否认，百度依然占了很打大一部分市场。而且本着折腾的精神，我也愿意学习一下托管的知识。</p><h1 id="zeit托管"><a href="#zeit托管" class="headerlink" title="zeit托管"></a>zeit托管</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>把你的html源码仓库（即静态博客）托管到他们的网站上，百度爬虫爬的不是github的仓库而是在他们网站上的网页，由此避免了github的拒绝访问。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul><li>登录 <a href="https://zeit.co/">zeit官网</a>，授权git仓库（静态代码的那个）</li><li>将返回的url绑定到你的域名解析下。</li></ul><p>具体方法来自<a href="https://zhuanlan.zhihu.com/p/113433230">知乎大佬</a></p><h1 id="求求百度来爬我"><a href="#求求百度来爬我" class="headerlink" title="求求百度来爬我"></a>求求百度来爬我</h1><p>百度心高气傲，我们得主动告诉他让他来爬我们的博客</p><h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p>百度要求验证这个网页是你的，要求你在目录中放一个他们的html文件来识别。</p><p>然而，Hexo会渲染所有的html，导致这个识别的html也被渲染，然后无法通过验证。</p><p>解决办法：</p><ul><li>参考csdn,在_config.yml 中 skip_render 下加上不渲染的文件名。但是我试了以后不成功。</li><li>把html保存成md，然后在头加上<code>layout: false</code>,同时用<code></code>包裹内容。这样在<code>hexo g</code>的时候就会不渲染地编译成html了。<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br><span class="hljs-section">layout: false</span><br><span class="hljs-section">---</span><br>&#123;% raw %&#125;<br><br>baidu-key<br><br>&#123;% endraw %&#125;<br><br></code></pre></td></tr></table></figure></li></ul><p>参考：<a href="https://blog.csdn.net/qq_36759224/article/details/90320295?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-90320295-blog-99705257.235%5Ev36%5Epc_relevant_default_base3&spm=1001.2101.3001.4242.2&utm_relevant_index=4">CSDN大佬</a>  </p><h2 id="收录"><a href="#收录" class="headerlink" title="收录"></a>收录</h2><p>未完待续……</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 建站相关 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Windows自带的Ubuntu虚拟机——WSL2</title>
-      <link href="/2023/05/29/wsl2/"/>
-      <url>/2023/05/29/wsl2/</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>原理应该是在windows内虚拟了一个linux内核，执行效率和方便程度都比虚拟机或者双系统高。但是据百度，它只能实现基础的软件开发，而不能作为桌面环境或者生产性服务器来使用。</p><p>感兴趣的uu可以拿来玩耍，当做linux的入门。注意这套方案是纯命令界面的，没有实体桌面。（可以通过下载GUI然后用windows自带的远程桌面登录，但是对我来说意义不大）</p><p><strong>林杨周周镇楼</strong></p><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191652203.png"></p><p><strong>环境：win11 22h2</strong></p><h2 id="1-打开windows的虚拟机和linux内核。"><a href="#1-打开windows的虚拟机和linux内核。" class="headerlink" title="1. 打开windows的虚拟机和linux内核。"></a>1. 打开windows的虚拟机和linux内核。</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191650290.png"><br><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191650924.png"><br>记得重启。</p><h2 id="2-win11商店下载ubuntu。"><a href="#2-win11商店下载ubuntu。" class="headerlink" title="2. win11商店下载ubuntu。"></a>2. win11商店下载ubuntu。</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191651981.png"></p><h2 id="3-此时打开ubuntu可能会报错"><a href="#3-此时打开ubuntu可能会报错" class="headerlink" title="3. 此时打开ubuntu可能会报错"></a>3. 此时打开ubuntu可能会报错</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191651633.png">，这是因为你的win11的wsl内核是老版本的，而应用商店下载的ubuntu已经是高版本的了，去<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi</a><br>上下载更新，然后在powershall内将其设为默认：wsl –set-default-version 2</p><h2 id="4-随后就可以正常进入了。从terminal里可以直接启动。"><a href="#4-随后就可以正常进入了。从terminal里可以直接启动。" class="headerlink" title="4. 随后就可以正常进入了。从terminal里可以直接启动。"></a>4. 随后就可以正常进入了。从terminal里可以直接启动。</h2><h2 id="5-后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！"><a href="#5-后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！" class="headerlink" title="5. 后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！"></a>5. 后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！</h2><h2 id="PS-：背景图片设置：设置，左下角json文件"><a href="#PS-：背景图片设置：设置，左下角json文件" class="headerlink" title="PS ：背景图片设置：设置，左下角json文件"></a>PS ：背景图片设置：设置，左下角json文件</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191652849.png"></p><p>每一个终端都在以guid开头的段落里，找到name是ubuntu的段落，我的长这样：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs json"> <span class="hljs-punctuation">&#123;</span><br>                <span class="hljs-attr">&quot;guid&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;&#123;59b72ad2-09f7-55ec-af87-65d062af8472&#125;&quot;</span><span class="hljs-punctuation">,</span><br>                <span class="hljs-attr">&quot;hidden&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>                <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Ubuntu 20.04.5 LTS&quot;</span><span class="hljs-punctuation">,</span><br>                <span class="hljs-attr">&quot;source&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc&quot;</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;background&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;#A0A0A0&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;backgroundImage&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;C:\\Users\\KLBB\\Pictures\\Saved Pictures\\b17eca8065380cd7902519139d743332588281cf.webp&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;backgroundImageOpacity&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-number">0.3</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;backgroundImageStretchMode&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;uniformToFill&quot;</span>        <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br></code></pre></td></tr></table></figure><hr><p>最后四个是我插入的：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;background&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;#A0A0A0&quot;</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;backgroundImage&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;C:\\Users\\……&quot;</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;backgroundImageOpacity&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-number">0.3</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;backgroundImageStretchMode&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;uniformToFill&quot;</span>    <br><br></code></pre></td></tr></table></figure><p>注意补上逗号，末尾不加，要英文逗号；地址需要双斜杠，正反斜杠都行。</p><p>background和backgroundImageOpacity实现类似蒙版的功能，为了不让图片太鲜艳使得看字太累，套上灰色蒙版，0.3是图片透明度。</p><p>backgroundImageStretchMode是图片覆盖方式。</p><p>保存文本文件即可。</p><h1 id="玩耍"><a href="#玩耍" class="headerlink" title="玩耍"></a>玩耍</h1><p>你就得到了一个无desktop的ubuntu，然后开始愉快地玩耍吧！</p><p>有意思的是，这个ubuntu与你的windows是互通的，在windows上你可以用“网路”访问ubuntu的虚拟硬盘内容，在ubuntu里你可以直接cd &#x2F;mnt进入windows的硬盘。</p><p>大一的时候，不小心把vscode的c搞坏了，然后我嫌配起来太麻烦，就在ubu里跑c。敲一行指令<code>apt install gcc</code>就结束了，然后写个makefile，日常编编小程序的体验与vscode的体验无异。</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 各种折腾教程 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>picgo+阿里云oss图床方案</title>
-      <link href="/2023/05/29/%E5%9B%BE%E5%BA%8A/"/>
-      <url>/2023/05/29/%E5%9B%BE%E5%BA%8A/</url>
-      
-        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>平常用md的朋友会发现，md里的图片都是保存在本地的，就算md自带云同步，也只能在同步的机子上看到图片。比如我想把一篇md复制到98直接发表，那么图片是无法显示的，具体长这样：（这里插了一张没有处理过的图片）</p><p><img src="/:/3eb6ac5cf46f466aaef146b27c089a15" alt="5587a051d8633a89dbaedfe1834ace1b.png"></p><p>图床的原理是把图片保存在云端，在md加载图片时会指向该网址，从而下载图片。</p><p>picgo:复制图片，按下快捷键的同时会自动上传云端，并返回md语法的地址。<br>阿里云oss：有很多oss可以选择，阿里云是5年45块钱。</p><h1 id="流程："><a href="#流程：" class="headerlink" title="流程："></a>流程：</h1><h2 id="OSS"><a href="#OSS" class="headerlink" title="OSS"></a>OSS</h2><ol><li>进入阿里云官网，搜索oss对象储存，购买套餐。</li><li>右上角头像处，进入accesskey管理<br> <img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191704225.png"><br> 用户-创建用户<br> <img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191706345.png"><br>勾选调用访问<br><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191707899.png"></li></ol><p>创建成功后在用户界面点击刚刚创建好的用户，然后往下拉，创建accesskey，注意创建完会给账号密码，这两个东西只会在这里显示一次，关掉就没有了，一定要保存好！</p><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191709956.png"></p><p>到这里用户方面的内容就搞好了</p><hr><p>搜索oss,进入oss控制台，创建bucket<br><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191711557.png"></p><p>其他都默认，这里一定要设成公共读写，因为你不但要上传还要下载。</p><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191712433.png"></p><p>至此oss的操作结束。</p><hr><p><br/><br/><br/><br/><br/><br/></p><h1 id="picgo配置"><a href="#picgo配置" class="headerlink" title="picgo配置"></a>picgo配置</h1><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191714823.png"></p><p>第一个随便取，keyld和secret就是刚刚的账号密码，bucket填你创建的bucket名称,设定区域如果是在校搞的话都是杭州。</p><h2 id="搞定！"><a href="#搞定！" class="headerlink" title="搞定！"></a><br/><br/><br/><br>搞定！</h2><p>以后在写作的时候把图片先上传，然后剪切板自动得到地址，粘贴到正文就好啦！</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 各种折腾教程 </category>
-          
-      </categories>
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>聚宝盆</title>
-      <link href="/2023/05/20/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/"/>
-      <url>/2023/05/20/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/</url>
-      
-        <content type="html"><![CDATA[<h1 id="fluid文档"><a href="#fluid文档" class="headerlink" title="fluid文档"></a>fluid文档</h1><p><a href="https://hexo.fluid-dev.com/docs/guide/#%E9%85%8D%E7%BD%AE">FLUID学习文档</a></p><p>不用多说了，本网站全部来自于他</p><h1 id="秒杀微机"><a href="#秒杀微机" class="headerlink" title="秒杀微机"></a>秒杀微机</h1><p><a href="https://blog.csdn.net/qq_35912930/category_10051750.html">CSDN 51微机合集 1</a><br><a href="https://blog.csdn.net/qq_37324376/category_11318865.html">CSDN 51微机合集 2</a></p><p>书本太硬，配合CSDN食用更加哦</p><h1 id="幅值的争议"><a href="#幅值的争议" class="headerlink" title="幅值的争议"></a>幅值的争议</h1><p><a href="https://www.zhihu.com/tardis/zm/art/141621333?source_id=1005">知乎——幅值、振幅、幅度</a></p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>Hexo &amp; Github page 本地快速部署及备份&amp;bat的妙用</title>
-      <link href="/2023/05/18/%E6%9C%AC%E5%9C%B0%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/"/>
-      <url>/2023/05/18/%E6%9C%AC%E5%9C%B0%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/</url>
+      <link href="/2023/06/30/%E6%9C%AC%E5%9C%B0%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/"/>
+      <url>/2023/06/30/%E6%9C%AC%E5%9C%B0%E5%BF%AB%E9%80%9F%E9%83%A8%E7%BD%B2%E5%8F%8A%E5%A4%87%E4%BB%BD/</url>
       
         <content type="html"><![CDATA[<p>在线部署没有搞明白，好在本地部署和同步找到了偷懒的办法</p><h2 id="bat的妙用"><a href="#bat的妙用" class="headerlink" title=".bat的妙用"></a>.bat的妙用</h2><p>早在暑假超算课，就把ssh和scp到集群的命令整合在一起放到一个.cmd中。因此一开始也是想要写到bat里。</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><code class="hljs cmd"><span class="hljs-built_in">cd</span> C:\APP\GIT_page\KLBBLB.github.io<br>hexo g <br><br><br><br><br><br>hexo d<br><span class="hljs-built_in">cd</span> ..<br><span class="hljs-built_in">xcopy</span> KLBBLB.github.io\ source\hexo_source\ /E/Y<br><br><span class="hljs-built_in">cd</span> source/hexo_source<br><br>git add .<br>git commit -m &#x27;<span class="hljs-number">6</span>&#x27;<br>git push<br><br></code></pre></td></tr></table></figure><p>结果发现只执行一行……</p><p>查百度才发现，其实这种dos指令本意上就是一行一行来的，早起程序员才不会让你浪费那么多堆栈呢</p><p>为了终端不关闭且顺序执行，要在命令前加call</p><figure class="highlight bat"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs bat"><span class="hljs-built_in">cd</span> C:\APP\GIT_page\KLBBLB.github.io<br><span class="hljs-keyword">call</span> hexo g <br><br><br><br><br><br><span class="hljs-keyword">call</span> hexo d<br><span class="hljs-built_in">cd</span> ..<br><span class="hljs-keyword">call</span> <span class="hljs-built_in">xcopy</span> KLBBLB.github.io\ source\hexo_source\ /E/Y<br><br><span class="hljs-built_in">cd</span> source/hexo_source<br><br><span class="hljs-keyword">call</span> git add .<br><span class="hljs-keyword">call</span> git commit -m &#x27;<span class="hljs-number">6</span>&#x27;<br>git push<br></code></pre></td></tr></table></figure><p>这里讲讲xcopy，就是cmd的复制指令，后边的&#x2F;E是复制子文件主文件空文件（全部），&#x2F;Y是阻止窗口跳覆盖提示使得过程变得不优雅</p><p>整段的意思就是hexo编译和发布，然后把源文件备份到本地仓库再上传到github。</p><h2 id="效果"><a href="#效果" class="headerlink" title="效果"></a>效果</h2><p><img src="/images/%E4%B8%80%E9%94%AE.gif"></p>]]></content>
       
@@ -195,11 +61,145 @@
     
     
     <entry>
+      <title>zeit托管</title>
+      <link href="/2023/06/30/%E6%89%98%E7%AE%A1/"/>
+      <url>/2023/06/30/%E6%89%98%E7%AE%A1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>2015年，github永久拒绝百度爬虫，理由是百度爬虫太狠导致安全问题。</p><p><img src="/images/baidu-git.gif" alt="第一次做这种动图，好有趣，可惜PS做GIF好麻烦……"></p><p>这导致我的博客无法被百度到。</p><p>虽然2023年必应一举超过百度成为了中国最热门的搜索引擎，并且我的博客是可以被必应收录的，但不可否认，百度依然占了很打大一部分市场。而且本着折腾的精神，我也愿意学习一下托管的知识。</p><h1 id="zeit托管"><a href="#zeit托管" class="headerlink" title="zeit托管"></a>zeit托管</h1><h2 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h2><p>把你的html源码仓库（即静态博客）托管到他们的网站上，百度爬虫爬的不是github的仓库而是在他们网站上的网页，由此避免了github的拒绝访问。</p><h2 id="方法"><a href="#方法" class="headerlink" title="方法"></a>方法</h2><ul><li>登录 <a href="https://zeit.co/">zeit官网</a>，授权git仓库（静态代码的那个）</li><li>将返回的url绑定到你的域名解析下。</li></ul><p>具体方法来自<a href="https://zhuanlan.zhihu.com/p/113433230">知乎大佬</a></p><h1 id="求求百度来爬我"><a href="#求求百度来爬我" class="headerlink" title="求求百度来爬我"></a>求求百度来爬我</h1><p>百度心高气傲，我们得主动告诉他让他来爬我们的博客</p><h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p>百度要求验证这个网页是你的，要求你在目录中放一个他们的html文件来识别。</p><p>然而，Hexo会渲染所有的html，导致这个识别的html也被渲染，然后无法通过验证。</p><p>解决办法：</p><ul><li>参考csdn,在_config.yml 中 skip_render 下加上不渲染的文件名。但是我试了以后不成功。</li><li>把html保存成md，然后在头加上<code>layout: false</code>,同时用<code></code>包裹内容。这样在<code>hexo g</code>的时候就会不渲染地编译成html了。<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs markdown">---<br><span class="hljs-section">layout: false</span><br><span class="hljs-section">---</span><br>&#123;% raw %&#125;<br><br>baidu-key<br><br>&#123;% endraw %&#125;<br><br></code></pre></td></tr></table></figure></li></ul><p>参考：<a href="https://blog.csdn.net/qq_36759224/article/details/90320295?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-1-90320295-blog-99705257.235%5Ev36%5Epc_relevant_default_base3&spm=1001.2101.3001.4242.2&utm_relevant_index=4">CSDN大佬</a>  </p><h2 id="收录"><a href="#收录" class="headerlink" title="收录"></a>收录</h2><p>未完待续……</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站相关 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>聚宝盆</title>
+      <link href="/2023/06/30/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/"/>
+      <url>/2023/06/30/%E5%B8%B8%E7%94%A8%E7%BD%91%E7%AB%99%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="fluid文档"><a href="#fluid文档" class="headerlink" title="fluid文档"></a>fluid文档</h1><p><a href="https://hexo.fluid-dev.com/docs/guide/#%E9%85%8D%E7%BD%AE">FLUID学习文档</a></p><p>不用多说了，本网站全部来自于他</p><h1 id="秒杀微机"><a href="#秒杀微机" class="headerlink" title="秒杀微机"></a>秒杀微机</h1><p><a href="https://blog.csdn.net/qq_35912930/category_10051750.html">CSDN 51微机合集 1</a><br><a href="https://blog.csdn.net/qq_37324376/category_11318865.html">CSDN 51微机合集 2</a></p><p>书本太硬，配合CSDN食用更加哦</p><h1 id="幅值的争议"><a href="#幅值的争议" class="headerlink" title="幅值的争议"></a>幅值的争议</h1><p><a href="https://www.zhihu.com/tardis/zm/art/141621333?source_id=1005">知乎——幅值、振幅、幅度</a></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>奇奇怪怪的问题之解决</title>
+      <link href="/2023/06/30/%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/"/>
+      <url>/2023/06/30/%E5%A5%87%E6%80%AA%E7%9A%84%E9%97%AE%E9%A2%98%E8%A7%A3%E5%86%B3/</url>
+      
+        <content type="html"><![CDATA[<ol><li><p>B站网页端默认清晰度变成了720p<br> 事发很突然，持续了一个月，今天终于忍不住了，可是清理cookie太麻烦，遂翻贴吧寻找，找到如下玄学解决方案，还真成功了……</p><p> <img src="/images/image.png" alt="Alt text"></p></li><li><p>显卡，设备管理器里能识别，能装驱动，但是不工作，任务管理器里不显示，GPUZ内看不到核心频率<br> 2060是16pin!!我怎么会脑抽地认为只用插8pin的啊！！以上现象均为只插8pin的结果。</p></li><li><p>git clone时报错</p> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs git">git clone https://github.com/KLBBLB/zeit.git<br></code></pre></td></tr></table></figure><p> 报错：</p> <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs bash">fatal: protocol <span class="hljs-string">&#x27;https&#x27;</span> is not supported<br><br></code></pre></td></tr></table></figure><p> 原因及解决：windows下git命令行显示问题，实际上你粘贴前进行过其他退格删除操作，会遗留一些看不到的字符在上面，完整的粘贴一遍或者重新打一遍https就可以</p></li><li><p>win11开机后网络要30s以后才能连接</p><p>感谢贴吧大哥</p></li></ol><p><img src="/images/wlan.png" alt="image-20230816110015457"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ONEDRIVE备份方案</title>
+      <link href="/2023/06/30/%E5%A4%87%E4%BB%BD/"/>
+      <url>/2023/06/30/%E5%A4%87%E4%BB%BD/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>看了很多固态硬盘掉盘和失效的视频，突然发现自己的数据居然都没有备份！<br>方案一就是买个机械的移动硬盘，但奈何囊中羞涩，而且移动硬盘买来不移动只备份好像说不过去<br>于是盯上了云备份。</p><h2 id="操作"><a href="#操作" class="headerlink" title="操作"></a>操作</h2><p>先看了百度云阿里云，都要充钱，pass<br>于是看到了ONEDRIVE，教育邮箱有5T的空间！缺点是速度比较慢，但对于备份来说速度并不重要。</p><p>因为ONEDRIVE只支持同步三个文件夹：我的图片，文档，桌面，所以要同步其他文件夹的话可以使用mklink命令，把其他文件夹链接到这三个文件夹上。</p><figure class="highlight cmd"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs cmd">mklink /d &quot;C:\Users\KLBB\OneDrive - zju.edu.cn\我的图片&quot; &quot;C:\DATA&quot;<br></code></pre></td></tr></table></figure><p>前面是onedrive的地址，后面是目标文件夹，保证onedrive里面没有重名文件夹。</p><p><img src="/images/beifen.png" alt="最终效果"></p><h2 id="end"><a href="#end" class="headerlink" title="end"></a>end</h2><p>上传速度不快，但电脑开着机放一晚上基本就同步好了。</p><p>参考自<a href="https://www.zhihu.com/question/265950919">知乎大神</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 各种折腾教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>picgo+阿里云oss图床方案</title>
+      <link href="/2023/06/30/%E5%9B%BE%E5%BA%8A/"/>
+      <url>/2023/06/30/%E5%9B%BE%E5%BA%8A/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>平常用md的朋友会发现，md里的图片都是保存在本地的，就算md自带云同步，也只能在同步的机子上看到图片。比如我想把一篇md复制到98直接发表，那么图片是无法显示的，具体长这样：（这里插了一张没有处理过的图片）</p><p><img src="/:/3eb6ac5cf46f466aaef146b27c089a15" alt="5587a051d8633a89dbaedfe1834ace1b.png"></p><p>图床的原理是把图片保存在云端，在md加载图片时会指向该网址，从而下载图片。</p><p>picgo:复制图片，按下快捷键的同时会自动上传云端，并返回md语法的地址。<br>阿里云oss：有很多oss可以选择，阿里云是5年45块钱。</p><h1 id="流程："><a href="#流程：" class="headerlink" title="流程："></a>流程：</h1><h2 id="OSS"><a href="#OSS" class="headerlink" title="OSS"></a>OSS</h2><ol><li>进入阿里云官网，搜索oss对象储存，购买套餐。</li><li>右上角头像处，进入accesskey管理<br> <img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191704225.png"><br> 用户-创建用户<br> <img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191706345.png"><br>勾选调用访问<br><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191707899.png"></li></ol><p>创建成功后在用户界面点击刚刚创建好的用户，然后往下拉，创建accesskey，注意创建完会给账号密码，这两个东西只会在这里显示一次，关掉就没有了，一定要保存好！</p><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191709956.png"></p><p>到这里用户方面的内容就搞好了</p><hr><p>搜索oss,进入oss控制台，创建bucket<br><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191711557.png"></p><p>其他都默认，这里一定要设成公共读写，因为你不但要上传还要下载。</p><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191712433.png"></p><p>至此oss的操作结束。</p><hr><p><br/><br/><br/><br/><br/><br/></p><h1 id="picgo配置"><a href="#picgo配置" class="headerlink" title="picgo配置"></a>picgo配置</h1><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191714823.png"></p><p>第一个随便取，keyld和secret就是刚刚的账号密码，bucket填你创建的bucket名称,设定区域如果是在校搞的话都是杭州。</p><h2 id="搞定！"><a href="#搞定！" class="headerlink" title="搞定！"></a><br/><br/><br/><br>搞定！</h2><p>以后在写作的时候把图片先上传，然后剪切板自动得到地址，粘贴到正文就好啦！</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 各种折腾教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows自带的Ubuntu虚拟机——WSL2</title>
+      <link href="/2023/06/30/wsl2/"/>
+      <url>/2023/06/30/wsl2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>原理应该是在windows内虚拟了一个linux内核，执行效率和方便程度都比虚拟机或者双系统高。但是据百度，它只能实现基础的软件开发，而不能作为桌面环境或者生产性服务器来使用。</p><p>感兴趣的uu可以拿来玩耍，当做linux的入门。注意这套方案是纯命令界面的，没有实体桌面。（可以通过下载GUI然后用windows自带的远程桌面登录，但是对我来说意义不大）</p><p><strong>林杨周周镇楼</strong></p><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191652203.png"></p><p><strong>环境：win11 22h2</strong></p><h2 id="1-打开windows的虚拟机和linux内核。"><a href="#1-打开windows的虚拟机和linux内核。" class="headerlink" title="1. 打开windows的虚拟机和linux内核。"></a>1. 打开windows的虚拟机和linux内核。</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191650290.png"><br><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191650924.png"><br>记得重启。</p><h2 id="2-win11商店下载ubuntu。"><a href="#2-win11商店下载ubuntu。" class="headerlink" title="2. win11商店下载ubuntu。"></a>2. win11商店下载ubuntu。</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191651981.png"></p><h2 id="3-此时打开ubuntu可能会报错"><a href="#3-此时打开ubuntu可能会报错" class="headerlink" title="3. 此时打开ubuntu可能会报错"></a>3. 此时打开ubuntu可能会报错</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191651633.png">，这是因为你的win11的wsl内核是老版本的，而应用商店下载的ubuntu已经是高版本的了，去<a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi</a><br>上下载更新，然后在powershall内将其设为默认：wsl –set-default-version 2</p><h2 id="4-随后就可以正常进入了。从terminal里可以直接启动。"><a href="#4-随后就可以正常进入了。从terminal里可以直接启动。" class="headerlink" title="4. 随后就可以正常进入了。从terminal里可以直接启动。"></a>4. 随后就可以正常进入了。从terminal里可以直接启动。</h2><h2 id="5-后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！"><a href="#5-后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！" class="headerlink" title="5. 后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！"></a>5. 后面的都是linux里的内容了，欢迎大佬科普linux的玩法和对于日常学习生活的帮助！</h2><h2 id="PS-：背景图片设置：设置，左下角json文件"><a href="#PS-：背景图片设置：设置，左下角json文件" class="headerlink" title="PS ：背景图片设置：设置，左下角json文件"></a>PS ：背景图片设置：设置，左下角json文件</h2><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202302191652849.png"></p><p>每一个终端都在以guid开头的段落里，找到name是ubuntu的段落，我的长这样：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs json"> <span class="hljs-punctuation">&#123;</span><br>                <span class="hljs-attr">&quot;guid&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;&#123;59b72ad2-09f7-55ec-af87-65d062af8472&#125;&quot;</span><span class="hljs-punctuation">,</span><br>                <span class="hljs-attr">&quot;hidden&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-literal"><span class="hljs-keyword">false</span></span><span class="hljs-punctuation">,</span><br>                <span class="hljs-attr">&quot;name&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;Ubuntu 20.04.5 LTS&quot;</span><span class="hljs-punctuation">,</span><br>                <span class="hljs-attr">&quot;source&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;CanonicalGroupLimited.Ubuntu20.04LTS_79rhkp1fndgsc&quot;</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;background&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;#A0A0A0&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;backgroundImage&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;C:\\Users\\KLBB\\Pictures\\Saved Pictures\\b17eca8065380cd7902519139d743332588281cf.webp&quot;</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;backgroundImageOpacity&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-number">0.3</span><span class="hljs-punctuation">,</span><br><span class="hljs-attr">&quot;backgroundImageStretchMode&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;uniformToFill&quot;</span>        <span class="hljs-punctuation">&#125;</span><span class="hljs-punctuation">,</span><br></code></pre></td></tr></table></figure><hr><p>最后四个是我插入的：</p><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs json"><span class="hljs-attr">&quot;background&quot;</span><span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;#A0A0A0&quot;</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;backgroundImage&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;C:\\Users\\……&quot;</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;backgroundImageOpacity&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-number">0.3</span><span class="hljs-punctuation">,</span><br><br><span class="hljs-attr">&quot;backgroundImageStretchMode&quot;</span> <span class="hljs-punctuation">:</span> <span class="hljs-string">&quot;uniformToFill&quot;</span>    <br><br></code></pre></td></tr></table></figure><p>注意补上逗号，末尾不加，要英文逗号；地址需要双斜杠，正反斜杠都行。</p><p>background和backgroundImageOpacity实现类似蒙版的功能，为了不让图片太鲜艳使得看字太累，套上灰色蒙版，0.3是图片透明度。</p><p>backgroundImageStretchMode是图片覆盖方式。</p><p>保存文本文件即可。</p><h1 id="玩耍"><a href="#玩耍" class="headerlink" title="玩耍"></a>玩耍</h1><p>你就得到了一个无desktop的ubuntu，然后开始愉快地玩耍吧！</p><p>有意思的是，这个ubuntu与你的windows是互通的，在windows上你可以用“网路”访问ubuntu的虚拟硬盘内容，在ubuntu里你可以直接cd &#x2F;mnt进入windows的硬盘。</p><p>大一的时候，不小心把vscode的c搞坏了，然后我嫌配起来太麻烦，就在ubu里跑c。敲一行指令<code>apt install gcc</code>就结束了，然后写个makefile，日常编编小程序的体验与vscode的体验无异。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 各种折腾教程 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SSH的知识&amp;在线部署踩坑相关</title>
-      <link href="/2023/05/18/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/"/>
-      <url>/2023/05/18/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/</url>
+      <link href="/2023/06/30/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/"/>
+      <url>/2023/06/30/SSH%E7%9A%84%E7%9F%A5%E8%AF%86&amp;%E5%9C%A8%E7%BA%BF%E9%83%A8%E7%BD%B2%E8%B8%A9%E5%9D%91%E7%9B%B8%E5%85%B3/</url>
       
         <content type="html"><![CDATA[<p>对不起我是小丑，虽然能跑了但hexo g 出来的网页是空白的，推测是插件环境没有搞好导致theme出不来，所以只有空白页面……</p><p>自动化之路任重道远啊……</p><p>挖坑，有空来填吧</p><hr><p>终于跑出来了！太激动了，这次更新值得新开一贴！</p><h2 id="痛点"><a href="#痛点" class="headerlink" title="痛点"></a>痛点</h2><ol><li><p>每次本地发布都需要</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs bash">hexo clean<br>hexo g<br>hexo d<br></code></pre></td></tr></table></figure><p>再等github慢悠悠发布，一点都不优雅</p></li><li><p>多台设备间无法同步</p></li><li><p>需要手动备份</p></li></ol><h2 id="目标"><a href="#目标" class="headerlink" title="目标"></a>目标</h2><ol><li>能在线编辑、部署</li><li>完全不需要本地参与</li></ol><h2 id="具体原理"><a href="#具体原理" class="headerlink" title="具体原理"></a>具体原理</h2><h3 id="先弄懂本地发布的原理"><a href="#先弄懂本地发布的原理" class="headerlink" title="先弄懂本地发布的原理"></a>先弄懂本地发布的原理</h3><p>一种方法是token，我本地用的就是token，走https。</p><p>当然也可以用ssh,因为之前接触过，所以后边都用ssh了。</p><p>本地仓库与github仓库靠ssh通信。本地有私钥，github上要填写公钥，这样才能连接。</p><p><a href="https://blog.csdn.net/ywl470812087/article/details/104459288?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_title~default-0.pc_relevant_antiscanv2&spm=1001.2101.3001.4242.1&utm_relevant_index=3">github ssh相关问题</a></p><p>注意啊，帖子里的setting是头像-setting，不是仓库里的setting，我不说是谁找了半天没找到ssh选项……</p><h3 id="推广到在线部署"><a href="#推广到在线部署" class="headerlink" title="推广到在线部署"></a>推广到在线部署</h3><p>所以要在线上配置一个与本地类似的环境，就可以模拟本地的发布。</p><p>用到了action的功能，在每次push后自动触发。</p><p>所以核心是在源码仓库放私钥！</p><h2 id="流程"><a href="#流程" class="headerlink" title="流程"></a>流程</h2><ol><li>新建仓库，把本地源文件push上去<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs bash">git init<br>git add .<br>git commit -m <span class="hljs-string">&quot;111&quot;</span><br>git branch -M main<br>git remote add origin git@github.com:KLBBLB/KLBBLB.github.io.git<br>git push -f origin main<br><br></code></pre></td></tr></table></figure>2.仓库的setting——secrets——actions——new repository secret</li></ol><p>添加三个环境变量，是后面代码要调用的</p><table><thead><tr><th>变量</th><th>内容</th></tr></thead><tbody><tr><td>GITME</td><td>邮箱</td></tr><tr><td>GITNAME</td><td>用户名</td></tr><tr><td>HEXO_DEPLOY_PRI</td><td>私钥</td></tr></tbody></table><ol start="3"><li>.gitinore\workflows下新建.yml文件</li></ol><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-attr">name:</span> <span class="hljs-string">HEXO自动部署</span><br><br><span class="hljs-attr">on:</span><br>  <span class="hljs-attr">push:</span><br>    <span class="hljs-attr">branches:</span><br>    <span class="hljs-bullet">-</span> <span class="hljs-string">main</span><br><br><span class="hljs-attr">jobs:</span><br>  <span class="hljs-attr">build:</span><br>    <span class="hljs-attr">runs-on:</span> <span class="hljs-string">ubuntu-latest</span><br>    <span class="hljs-attr">strategy:</span><br>      <span class="hljs-attr">matrix:</span><br>        <span class="hljs-attr">node-version:</span> [<span class="hljs-number">14.</span><span class="hljs-string">x</span>]<br><br>    <span class="hljs-attr">steps:</span><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/checkout@v1</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">使用</span> <span class="hljs-string">Node.js</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">matrix.node-version</span> <span class="hljs-string">&#125;&#125;</span><br>        <span class="hljs-attr">uses:</span> <span class="hljs-string">actions/setup-node@v1</span><br>        <span class="hljs-attr">with:</span><br>          <span class="hljs-attr">node-version:</span> <span class="hljs-string">$&#123;&#123;</span> <span class="hljs-string">matrix.node-version</span> <span class="hljs-string">&#125;&#125;</span><br><br>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">配置环境</span><br>        <span class="hljs-attr">env:</span><br>          <span class="hljs-attr">HEXO_DEPLOY_PRI:</span> <span class="hljs-string">$&#123;&#123;secrets.HEXO_DEPLOY_PRI&#125;&#125;</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          mkdir -p ~/.ssh/</span><br><span class="hljs-string">          echo &quot;$HEXO_DEPLOY_PRI&quot; &gt; ~/.ssh/id_rsa</span><br><span class="hljs-string">          chmod 600 ~/.ssh/id_rsa</span><br><span class="hljs-string">          ssh-keyscan github.com &gt;&gt; ~/.ssh/known_hosts</span><br><span class="hljs-string">          git config --global user.name &quot;$&#123;&#123;secrets.GITNAME&#125;&#125;&quot;</span><br><span class="hljs-string">          git config --global user.email &quot;$&#123;&#123;secrets.GITME&#125;&#125;&quot;</span><br><span class="hljs-string"></span>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">安装依赖项</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          npm i -g hexo-cli</span><br><span class="hljs-string">          npm i</span><br><span class="hljs-string"></span>      <span class="hljs-bullet">-</span> <span class="hljs-attr">name:</span> <span class="hljs-string">部署</span> <span class="hljs-string">hexo</span><br>        <span class="hljs-attr">run:</span> <span class="hljs-string">|</span><br><span class="hljs-string">          hexo clean &amp;&amp; hexo generate &amp;&amp; hexo deploy</span><br><span class="hljs-string"></span><br></code></pre></td></tr></table></figure><p><img src="https://klbbpicgo.oss-cn-hangzhou.aliyuncs.com/202305181508786.png"><br>4. 踩坑</p><ul><li>有语法错误不会报错，但是actions不会触发，以此为依据说明有地方错了</li><li>报错<code>fatal: could not read Username for &#39;https://github.com&#39;: No such device or address</code>，把源文件里_config.yml的发布地址由https开头改为<code>git@github.com:10wen/10wen.github.io.git</code>的ssh地址。这确实是应该提早就想到的，本地的当时使用token的形式发布，这里改为了ssh，当然要改地址！</li></ul><h2 id="碎碎念"><a href="#碎碎念" class="headerlink" title="碎碎念"></a>碎碎念</h2><p>关于公钥私钥，一开始没有理解，然后突然灵光乍现……可恶啊超算学的东西全忘了……</p><p>看来还是要温故而知新啊</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 建站相关 </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>JOPLIN &amp; MARKDOWN</title>
+      <link href="/2023/06/30/joplin&amp;markdown%E5%90%88%E9%9B%86/"/>
+      <url>/2023/06/30/joplin&amp;markdown%E5%90%88%E9%9B%86/</url>
+      
+        <content type="html"><![CDATA[<h1 id="multimarkdown-表格扩展"><a href="#multimarkdown-表格扩展" class="headerlink" title="multimarkdown 表格扩展"></a>multimarkdown 表格扩展</h1><p>不扩展前，表格只能是这样的</p><figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs markdown">| 低音提升 |              | 低音衰减 |              | 高音提升 |              | 高音衰减 |              |<br>| -------- | ------------ | -------- | ------------ | -------- | ------------ | -------- | ------------ |<br>| 频率     | 提升量（dB） | 频率     | 衰减量（dB） | 频率     | 提升量（dB） | 频率     | 衰减量（dB） |<br>| 20Hz     | 18.6         | 20Hz     | -20          | 20kHz    | 13.1         | 20kHz    | -21          |<br></code></pre></td></tr></table></figure><p><img src="/images/image-1.png" alt="Alt text"></p><p>启用后：</p><pre><code class="markdown">| 低音提升             || 低音衰减               || 高音提升 |              | 高音衰减 |              || -------- | ------------ | -------- | ------------ | -------- | ------------ | -------- | ------------ || 频率     | 提升量（dB） | 频率     | 衰减量（dB） | 频率     | 提升量（dB） | 频率     | 衰减量（dB） || 20Hz     | 18.6         | 20Hz     | -20          | 20kHz    | 13.1         | 20kHz    | -21          |![Alt text](images/image2.png)但好像vscode的渲染不管怎么样都能渲染成第二种。</code></pre>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello World</title>
+      <link href="/2023/06/30/hello-world/"/>
+      <url>/2023/06/30/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>果然赶ddl的时候除了ddl什么都是香的……</p><p>大晚上突然兴起决定搓一个网站来当信纸(&#x2F;doge)</p><p>图片测试<br><img src="/images/test.jpg"></p><p>公式测试</p><p>$\frac{t_0}{2\omega}$</p><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>想来和网页有着不解之缘</p><br><h2 id="高中"><a href="#高中" class="headerlink" title="高中"></a>高中</h2><p>高二疫情在家的时候无聊，第一次接触建站，第一次懵懵懂懂间了解了网页的构成和原理。其实可以把网页看成一个放在网上的程序，所以广义上，他由<strong>本地的一部分代码</strong> 与 把它<strong>放到网上的手段</strong> 两部分构成。那个时候全程跟着教程走，折腾了整整一周，终于搭建出了人生中第一个网站：“klbb的小窝”。它基于wordpress，部署在免费的云服务器上，域名是1块钱白嫖来的。现在想来，那个网站很可能是我高中的转折点。在填鸭教育中，我好像从头到尾自己做出了一个很酷的东西，这让我满怀信心，有勇气面对高三的艰难险阻；也是在那个时候，工科男的那种热爱折腾的精神扎根在了心底。</p><p>很可惜，在高三繁忙的学业中，云服务器过期并且删档了，而小白如我居然没有留本地备份，所以很悲催的是在一个周末我发现再也登不上那个网站了……</p><br><h2 id="大一"><a href="#大一" class="headerlink" title="大一"></a>大一</h2><p>在此接触网站是在大一下工高报名表的时候。要求全程手撸前端后端代码，写一个本地的可登录的备忘录网站。看着这好像熟悉又完全陌生的玩意，我还是毅然选了这题。四天的天昏地暗，早八到晚二，从零学三门html，css，js,一边敲代码一边骂自己高二干嘛要用wordpress那个现成的玩意。好在最后是做出来了一个精致的网站，四道题里只有这个是答得最完整的，我后来想想能进后面的面试这道题肯定帮了很大的忙。</p><br> <h1 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h1><h2 id="5-14"><a href="#5-14" class="headerlink" title="5.14"></a>5.14</h2><ul><li>基于hexo，部署于github page上的静态页面</li><li>用到node.js以及git</li><li>具体流程参考<a href="https://blog.csdn.net/qq_51513895/category_11314070.html">CSDN大佬</a></li></ul><p>使用redefine主题配置</p><h2 id="5-18凌晨"><a href="#5-18凌晨" class="headerlink" title="5.18凌晨"></a>5.18凌晨</h2><ol><li>搞定了git push，把整个源码push到了hexo分支，方便在线管理</li><li>添加了自动部署action</li><li>阿里云图床</li><li>在线出发action好像还是有问题……</li></ol><p>踩坑</p><ol><li>关于本地无法git checkout -b newbranch  还没解决</li><li>如果push后显示everything up-date，需要<figure class="highlight pgsql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs pgsql">git <span class="hljs-keyword">add</span> .<br>git <span class="hljs-keyword">commit</span> -m <span class="hljs-string">&#x27;anything&#x27;</span><br>git push<br><br></code></pre></td></tr></table></figure></li></ol><h2 id="5-18白天"><a href="#5-18白天" class="headerlink" title="5.18白天"></a>5.18白天</h2><p>404小坑：在source文件夹下加CNAME，否则每次发布会把原来的CNAME给删掉造成404</p><h2 id="5-20下午"><a href="#5-20下午" class="headerlink" title="5.20下午"></a>5.20下午</h2><p>更换为fluid主题，决定长期使用。</p><ul><li>文章摘要精简</li></ul><p>踩坑：yml配置文件冒号后面要有空格</p><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs yml"><span class="hljs-meta">---</span><br><span class="hljs-attr">title:</span> <span class="hljs-string">Hello</span> <span class="hljs-string">World</span>   <span class="hljs-string">（注意冒号后的空格）</span><br><span class="hljs-attr">excerpt:</span> <span class="hljs-string">一晚上特种兵式建站笔记</span>  <span class="hljs-string">（注意冒号后的空格）</span><br><span class="hljs-meta">---</span><br></code></pre></td></tr></table></figure><h2 id="5-22凌晨"><a href="#5-22凌晨" class="headerlink" title="5.22凌晨"></a>5.22凌晨</h2><p>改了一下图标、背景图之类的小玩意</p><h2 id="5-22下午"><a href="#5-22下午" class="headerlink" title="5.22下午"></a>5.22下午</h2><p>加了分类功能，终于可以把技术贴和碎碎念分开啦</p><h2 id="9-23深夜"><a href="#9-23深夜" class="headerlink" title="9.23深夜"></a>9.23深夜</h2><p>加了友链功能。</p>]]></content>
       
       
       <categories>
